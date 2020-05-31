@@ -136,6 +136,8 @@ void setup()
 {
   Serial.begin(115200);
 
+  pinMode(LED_BUILTIN, OUTPUT);
+
   //================ SPIFFS ===========================================
   // https://github.com/espressif/arduino-esp32/issues/3000
   //if (SPIFFS.begin(false,"/spiffs",30)) 
